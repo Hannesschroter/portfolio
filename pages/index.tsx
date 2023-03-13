@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Header from "../components/Header";
 import Hero from '@/components/Hero';
+import About from '@/components/About';
+import WorkExperience from '@/components/WorkExperience';
+import TestSection from '@/components/TestSection';
 
 
 export default function Home() {
@@ -10,18 +13,30 @@ export default function Home() {
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Head>
         <title>Hannes Schroter</title>
-      </Head      >
+      </Head>
 
       <Header />
 
       {/* Hero */}
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
 
       </section>
       
       {/* About */}
-      <section>
+      <section id="about" className="snap-center">
+        <About />
+
+      </section>
+
+      {/* <section id="work" className="snap-center">
+        <TestSection />
+      </section> */}
+
+      <section id="work" className="snap-center">
+
+        <WorkExperience />
+
 
       </section>
       

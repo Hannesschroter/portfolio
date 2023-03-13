@@ -9,7 +9,7 @@ type Props = {}
 
 export default function Hero({}: Props) {
     const [text,count] = useTypewriter({
-        words: ["Hi, My name is Hannes.", "I love Artificial Intelligence", "I love Sailing"],
+        words: ["Hi, My name is Hannes.", "I love Artificial Intelligence", "I love Machine Learning"],
         loop: true,
         delaySpeed: 2000,
 
@@ -31,7 +31,7 @@ export default function Hero({}: Props) {
             <Link  href="#about">
             <button className="heroButton">About</button>
             </Link>
-            <Link href="#experience">
+            <Link href="#work">
             <button className="heroButton">Experience</button>
             </Link>
             <Link href="#skills">
