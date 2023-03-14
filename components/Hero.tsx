@@ -19,7 +19,8 @@ export default function Hero({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
         <BackgroundCircles />
         <img className="relative rounded-full h-40 w-40 object-cover" 
-        src="/profile_pic.png" /> 
+        src="/profile_pic.png"
+        alt="" /> 
         <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]"> Data Scientist</h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">

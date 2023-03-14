@@ -18,7 +18,8 @@ export default function ExperienceCard({}: Props) {
     viewport={{once:true}}
 
     className="w-3/4 h-40 rounded-2xl xl:w-3/4 xl:h-[200px] object-cover object-center" 
-    src="/hr21.png" />
+    src="/hr21.png" 
+    alt=""/>
 
     <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light"> Project HR21</h4>
@@ -42,7 +43,7 @@ export default function ExperienceCard({}: Props) {
 
         <ul className="list-disc space-y-4 ml-5 text-lg">
             <li>Natural Language Processing</li>
-            <li>Solving the "Who Knows What Problem"</li>
+            <li>Solving the &quot;Who Knows What Problem&quot;</li>
             <li>Connecting employees in your organization</li>
             <li>Automated Knowledge Landscapes</li>
         </ul>
