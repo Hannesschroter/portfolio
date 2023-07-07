@@ -7,6 +7,7 @@ import About from '@/components/About';
 import WorkExperience from '@/components/WorkExperience';
 import TestSection from '@/components/TestSection';
 import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
 
 
 export default function Home() {
@@ -48,9 +49,9 @@ export default function Home() {
 
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="snap-center">
 
-        <Skills />
+        <Projects  />
 
 
       </section>
