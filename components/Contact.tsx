@@ -17,8 +17,11 @@ function Contact({}: Props) {
     const {
         register,
         handleSubmit,
-      } = useForm<Inputs>()
-    const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+      } = useForm<Inputs>();
+    const onSubmit: SubmitHandler<Inputs> = (formData) => {
+        window.location.href = `mailto:hannes@schroter.biz?subject=${formData.subject}&body=Hi, my Name is ${formData.name}. ${formData.message}`;
+
+    };
 
 
 
@@ -31,7 +34,7 @@ function Contact({}: Props) {
         <div className="flex flex-col space-y-10">
             <h4 className="text-4xl font-semibold text-center" >
                 I have got just what you need.{" "}
-                <span className="decoration-[#F7AB0A]/50 underline"> Let's talk</span>
+                <span className="decoration-[#F7AB0A]/50 underline"> Let`&apos;`s talk</span>
             </h4>
             <div className="space-y-10">
                 <div className="flex items-center space-x-5 justify-center">
@@ -50,15 +53,15 @@ function Contact({}: Props) {
                 </div>
             </div>
 
-            <form className="flex flex-col space-y-2 w-fit mx-auto">
+            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
                 <div className="flex space-x-2">
-                    <input placeholder="Name" className="contactInput" type="text" />
-                    <input placeholder="Email" className="contactInput" type="email" />
+                    <input {...register('name')} placeholder="Name" className="contactInput" type="text" />
+                    <input {...register('email')}placeholder="Email" className="contactInput" type="email" />
                 </div>
 
-                <input placeholder="Subject" className="contactInput" type="text" />
+                <input {...register('subject')} placeholder="Subject" className="contactInput" type="text" />
 
-                <textarea placeholder="Message" className="contactInput" />
+                <textarea {...register('message')} placeholder="Message" className="contactInput" />
                 <button 
                 type="submit" 
                 className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold
