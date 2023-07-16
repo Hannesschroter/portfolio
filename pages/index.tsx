@@ -43,7 +43,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
       
       {/* About */}
       <section id="about" className="snap-center">
-        <About />
+        <About pageInfo={pageInfo}/>
 
       </section>
 {/* 
@@ -53,7 +53,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
       <section id="workexperience" className="snap-center">
 
-        <WorkExperience />
+        <WorkExperience experiences={experiences}/>
 
       </section>
 
