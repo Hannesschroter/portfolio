@@ -60,16 +60,6 @@ export default function Home() {
 
       </section>
 
-
-
-
-      
-      {/* Experiences */}
-      
-      {/* Projects */}
-      
-      {/* Contact Me */}
-
     </div>
   )
 }
