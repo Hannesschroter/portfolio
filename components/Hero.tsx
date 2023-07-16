@@ -2,14 +2,17 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import Link from 'next/link';
+import { PageInfo } from '@/typings';
 
 
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo,
+}
 
-export default function Hero({}: Props) {
+export default function Hero({pageInfo}: Props) {
     const [text,count] = useTypewriter({
-        words: ["Hi, My name is Hannes.", "I love Artificial Intelligence", "I love Machine Learning"],
+        words: [`Hi, My Name is ${pageInfo.name}.`, "I love Artificial Intelligence", "I love Machine Learning"],
         loop: true,
         delaySpeed: 2000,
 
@@ -19,7 +22,7 @@ export default function Hero({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
         <BackgroundCircles />
         <img className="relative rounded-full h-40 w-40 object-cover" 
-        src="/profile_pic.png"
+        src={urlFor(pageInfo.heroImage).url()}
         alt="" /> 
         <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]"> Data Scientist</h2>
