@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { Experience } from '@/typings';
+import { Project } from '@/typings';
 import { urlFor } from '@/sanity';
 
 
 type Props = {
-    experience: Experience;
+    project: Project;
 }
 
-export default function ExperienceCard({experience}: Props) {
+export default function ExperienceCard({project}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px]
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[400px] xl:w-[600px]
     snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 
     cursor-pointer transition-opacity duration-200 overflow-hidden">
     <motion.img
@@ -22,14 +22,14 @@ export default function ExperienceCard({experience}: Props) {
     viewport={{once:true}}
 
     className="w-3/4 h-40 rounded-2xl xl:w-3/4 xl:h-[200px] object-cover object-center" 
-    src={urlFor(experience?.companyImage).url()} 
+    src={urlFor(project?.image).url()} 
     alt=""/>
 
     <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light"> Project HR21</h4>
+        <h4 className="text-4xl font-light"> {project.title}</h4>
         <p className="font-semibold text-2xl mt-1"> Technology</p>
         <div className="flex space-x-2 my-2">
-            {experience.technologies.map(technology =>(
+            {project.technologies.map(technology =>(
                 <img 
                     key={technology._id}
                     className="h-10 w-10 rounded-full"
@@ -39,19 +39,22 @@ export default function ExperienceCard({experience}: Props) {
             ))}
             
         </div>
+        <p>{project.summary}
 
-        <p className="uppercase py-5 text-gray-300">
+        </p>
+
+        {/* <p className="uppercase py-5 text-gray-300">
             {new Date(experience?.dateStarted).toDateString()} - {experience.isCurrentlyWorkingHere 
             ? "Present" 
             : new Date(experience?.dateStarted).toDateString()}
-        </p>
+        </p> */}
 
-        <ul className="list-disc space-y-4 ml-5 text-lg h-96 ">
+        {/* <ul className="list-disc space-y-4 ml-5 text-lg h-96 ">
             {experience.points.map((point,i) =>(
                 <li key={i}>{point}</li>
             ))}
            
-        </ul>
+        </ul> */}
 
 
     </div>
