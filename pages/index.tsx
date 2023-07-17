@@ -53,7 +53,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
       <section id="workexperience" className="snap-center">
 
-        <WorkExperience experiences={experiences}/>
+        <WorkExperience projects={projects}/>
 
       </section>
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import ExperienceCard from './ExperienceCard';
-import { Experience } from '@/typings';
+import { Project } from '@/typings';
 
 type Props = {
-  experiences: Experience[]
+  projects: Project[]
 }
 
-function WorkExperience({experiences}: Props) {
+function WorkExperience({projects}: Props) {
   return (
     <motion.div
     initial={{opacity: 0}}
@@ -20,8 +20,8 @@ function WorkExperience({experiences}: Props) {
 
 
     <div className="scrollbar-hide w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
-        {experiences?.map((experience) =>(
-          <ExperienceCard key={experience._id} experience={experience}/>
+        {projects?.map((project) =>(
+          <ExperienceCard key={project._id} project={project}/>
         ))}
     
     </div>

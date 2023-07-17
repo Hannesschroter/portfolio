@@ -26,7 +26,7 @@ type Data = {
 export const fetchPageInfo = async () => {
     const res = await sanityClient.fetch(query); 
 
-    console.log("fetching", res);
+    // console.log("fetching", res);
 
     // const data = await res.json();
     // const pageInfo: PageInfo = data.pageInfo;
