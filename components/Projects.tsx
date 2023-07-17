@@ -1,10 +1,13 @@
+import { urlFor } from '@/sanity';
+import { Project } from '@/typings';
 import { motion } from 'framer-motion';
 import React from 'react'
 
-type Props = {};
+type Props = {
+    projects: Project[];
+};
 
-function Projects({}: Props) {
-const projects = [1, 2, 3, 4, 5];
+function Projects({ projects }: Props) {
   return (
     <motion.div 
     initial={{ opacity: 0}}
@@ -28,8 +31,9 @@ const projects = [1, 2, 3, 4, 5];
                     transition={{ duration: 1.2 }}
                     whileInView={{ opacity: 1, y: 0}}
                     viewport={{ once: true }}
-                    src="/hr21.png" 
+                    src={urlFor(project?.image).url()}
                     alt=""
+                    className="w-1/2 h-1/2"
                 />
             
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
@@ -37,13 +41,23 @@ const projects = [1, 2, 3, 4, 5];
                     <span className="underline decoration-[#F7AB0A]/50">
                     Case study {i + 1} of {projects.length}: 
                     </span>
-                    UPS Clone
+                    {project?.title}
                 </h4>
+                
+                <div className="flex items-center space-x-2 justify-center">
+                {project.technologies.map(technology => 
+                    <img 
+                    className="h-10 w-10 "
+                    key={technology._id} 
+                    src={urlFor(technology.image).url()}
+                    alt=""/>
+                    )}
+                </div>
+
+               
+
                 <p className="text-lg text-center md:text-left">
-                    This is a dummy description of my first project. There will be several projects
-                    on this website. Each of the project gives a brief introduction about relevant details and the core concepts. 
-                    If you are interested in how they were done you can contact me for further information. 
-                    I am more than happy to share my insights. 
+                    {project?.summary}
                 </p>
                 </div>
              </div>

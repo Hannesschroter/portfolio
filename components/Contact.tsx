@@ -1,3 +1,4 @@
+import { PageInfo } from '@/typings';
 import React from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
@@ -11,9 +12,11 @@ type Inputs = {
     message: string;
   };
 
-type Props = {};
+type Props = {
+    pageInfo: PageInfo;
+};
 
-function Contact({}: Props) {
+function Contact({pageInfo}: Props) {
     const {
         register,
         handleSubmit,
@@ -39,12 +42,12 @@ function Contact({}: Props) {
             <div className="space-y-10">
                 <div className="flex items-center space-x-5 justify-center">
                     <AiOutlinePhone className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                    <p className="text-2xl">+49 174 7717828</p>
+                    <p className="text-2xl">{pageInfo.phoneNumber}</p>
                 </div>
 
                 <div className="flex items-center space-x-5 justify-center">
                     <AiOutlineMail className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                    <p className="text-2xl">hannes@schroter.biz</p>
+                    <p className="text-2xl">{pageInfo.email}</p>
                 </div>
 
                 <div className="flex items-center space-x-5 justify-center">
