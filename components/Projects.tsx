@@ -22,7 +22,7 @@ function Projects({ projects }: Props) {
     <div className="relative w-full flex overflow-x-scroll overflow-y-hidden scrollbar-hide snap-x snap-mandatory z-20">
         {projects.map((project, i) => (
             // eslint-disable-next-line react/jsx-key
-            <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+            <div key={project._id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
                 <motion.img
                     initial={{
                         y: -300,
