@@ -10,7 +10,7 @@ type Props = {
 
 export default function ExperienceCard({project}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[400px] xl:w-[600px]
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[700px]
     snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 
     cursor-pointer transition-opacity duration-200 overflow-hidden">
     <motion.img

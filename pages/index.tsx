@@ -16,6 +16,7 @@ import { fetchSkills } from '@/utils/fetchSkills';
 import { fetchPageInfo } from '@/utils/fetchPageInfo';
 import { fetchProjects } from '@/utils/fetchProjects';
 import { fetchSocials } from '@/utils/fetchSocials';
+import Info from '@/components/Info';
 
 type Props = {
   pageInfo: PageInfo; 
@@ -40,6 +41,13 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
         <Hero pageInfo={pageInfo} />
 
       </section>
+
+      <section id="info" className="snap-start">
+        <Info pageInfo={pageInfo} />
+
+      </section>
+
+
       
       {/* About */}
       <section id="about" className="snap-center">
