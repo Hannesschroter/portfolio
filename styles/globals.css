@@ -28,237 +28,40 @@
         scrollbar-width: none;  /* Firefox */
     }
 
-    .pulsingcircle {
-        --border-size: 6px;
-        --border-angle: 0turn;
-        border-radius: 20%;
-        width: 50vmin;
-        height: 50vmin;
-        background: conic-gradient(
-            from var(--border-angle),
-            rgb(36,36,36),
-            rgb(238, 238, 238) 50%,
-            rgb(36,36,36)
-          ),
-          conic-gradient(from var(--border-angle), transparent 10%, rgb(107 114 128), #F7AB0A);
-        background-size: calc(100% - (var(--border-size) * 2))
-            calc(100% - (var(--border-size) * 2)),
-          cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-      
-        animation: bg-spin 8s linear infinite;
-        @keyframes bg-spin {
-          to {
-            --border-angle: 1turn;
-          }
-        }
-      
-        &:hover {
-          animation-direction: reverse;
-        }
-      }
-      
-      .pulsingcircle {
-        position:relative;
-        width: 50vmin;
-        height: 50vmin;
-        border-radius: 20%;
-        --border-size: 10px;
-        --border-angle: 0turn;
-        border: 4px solid transparent;
 
-        background: conic-gradient(
-            from var(--border-angle),
-            rgb(36,36,36),
-            rgb(98, 89, 89) 50%,
-            rgb(36,36,36)
-          ),
-          conic-gradient(from var(--border-angle), transparent 10%, rgb(107 114 128), #15ff00);
-        background-clip: padding-box;
-        background-position: center center;
-        background-repeat: no-repeat;
-        /* box-shadow:  inset; */
-        padding:10px;
-       
-      }
+    .mask {
+        /* -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
+        /* mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
 
-      .pulsingcircle::after{
-        /* position: absolute;
-        top: -10px; bottom: -10px;
-        left: -10px; right: -10px;
-        border-radius: 50%;
-        background: conic-gradient(
-            from var(--border-angle),
-            rgb(36,36,36),
-            rgb(181, 51, 51) 50%,
-            rgb(36,36,36)
-          ),
-        conic-gradient(from var(--border-angle), transparent 10%, rgb(107 114 128), #F7AB0A);
+        /* background: rgb(253,253,253); */
+        /* background: linear-gradient(180deg, rgba(253,253,253,0) 0%, rgba(0,0,0,1) 63%, rgba(0,0,0,1) 100%); */
 
-        z-index: 1;
-        content: " ";
-      
-        animation: bg-spin 8s linear infinite;
-        @keyframes bg-spin {
-          to {
-            --border-angle: 1turn;
-          }
-        }
-      
-        &:hover {
-          animation-direction: reverse;
-        } */
-        position:absolute;
-        width: 20vmin;
-        height: 20vmin;
-        top: -30px; bottom: -30px;
-        left: -30px; right: -30px;
-        /* background-image: conic-gradient(
-            from var(--border-angle),
-            #213,
-            #112 50%,
-            #213
-          ),
-          conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03); */
-        background-position: center center;
-        background-repeat: no-repeat;
-        border: 4px solid transparent;
-        border-radius: 40%;
-
-        
-        z-index: 1;
-        content:" ";
-      
-        animation: bg-spin 3s linear infinite;
-        @keyframes bg-spin {
-          to {
-            --border-angle: 1turn;
-          }
-        }
-      }
-      
-      @property --border-angle {
-        syntax: "<angle>";
-        inherits: true;
-        initial-value: 0turn;
-      }
-
-      .box {
-        --border-size: 10px;
-        --border-angle: 0turn;
-        width: 60vmin;
-        height: 50vmin;
-        background-image: conic-gradient(
-            from var(--border-angle),
-            rgba(34, 17, 51, 0),
-            #112 50%,
-            rgba(34, 17, 51, 0)
-          ),
-          conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
-        background-size: calc(100% - (var(--border-size) * 2))
-            calc(100% - (var(--border-size) * 2)),
-          cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-      
-        animation: bg-spin 3s linear infinite;
-        @keyframes bg-spin {
-          to {
-            --border-angle: 1turn;
-          }
-        }
-      
-        &:hover {
-          animation-play-state: paused;
-        }
-      }
-      
-      @property --border-angle {
-        syntax: "<angle>";
-        inherits: true;
-        initial-value: 0turn;
-      }
-
-
-    .test {
-        --border-angle: 0turn;
-        --border-size:10px;
-        width: 50vmin;
-        height: 50vmin;
-        position: relative;
-        /* margin: 5px; */
-        /* display: inline-block; */
-        font-size: 30px;
-        border: 4px solid white;
-      }
-      
-      .test::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: 50%;
-        padding: 10px; /* control the border thickness */
-        background-image: conic-gradient(
-            from var(--border-angle),
-            rgba(34, 17, 51, 0),
-            rgb(0, 0, 207) 50%,
-            rgba(34, 17, 51, 0)
-          ),
-          conic-gradient(from var(--border-angle), transparent 5%, rgb(192, 192, 192), #f03);
-        background-size: calc(100% - (var(--border-size) * 2))
-            calc(100% - (var(--border-size) * 2)),
-          cover;
-        -webkit-mask: 
-          linear-gradient(#fff 0 0) content-box, 
-          linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-                mask-composite: exclude;
-        pointer-events: none;
-
-        --border-angle: 0turn;
-
-        animation: bg-spin 3s linear infinite;
-        @keyframes bg-spin {
-          to {
-            --border-angle: 1turn;
-          }
-        }
-
-        
-      }
-
-      @property --border-angle {
-        syntax: "<angle>";
-        inherits: true;
-        initial-value: 0turn;
-      }
+        -webkit-mask-image: linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(253,253,253,0) 80%, rgba(253,253,253,0) 100%);
+        background: linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(253,253,253,0) 80%, rgba(253,253,253,0) 100%);
+    }
 
 
       .circle_large {
         position: relative;
-        --border-angle: 1turn;
+        --border-angle-large: 1turn;
         width: 50vmin;
         height: 50vmin;
-        /* padding: 20px 30px; */
-        /* display: inline-block; */
-        /* font-size: 30px; */
       }
       
       .circle_large::before {
-
         content: "";
         position: absolute;
         inset: 0;
         border-radius: 50%;
-        padding: 6px; /* control the border thickness */
+        padding: 3px; /* control the border thickness */
         background-image: conic-gradient(
-            rgb(239, 239, 239) 80%,
-            rgb(239, 239, 239) 50%,
-            rgb(33, 222, 255) 98%,
-            rgb(239, 239, 239)
-
+            from var(--border-angle-small),
+            rgba(239, 239, 239, 0.2) 50%,
+            rgba(239, 239, 239, 0.2) 93%,
+            #F7AB0A 99%,
+            rgba(239, 239, 239, 0.2)
           );
+
         -webkit-mask: 
           linear-gradient(#fff 0 0) content-box, 
           linear-gradient(#fff 0 0);
@@ -267,19 +70,24 @@
         pointer-events: none;
 
 
-        animation: bg-spin 5s linear infinite;
+
+        animation: bg-spin 6s reverse linear infinite;
         @keyframes bg-spin {
           to {
-            --border-angle: 0turn;
+            --border-angle-large: 0turn;
           }
         }
       }
 
-      @property --border-angle {
+      @property --border-angle-large {
         syntax: "<angle>";
         inherits: true;
-        initial-value: 1 turn;
+        initial-value: 1turn;
       }
+
+
+
+
 
       .circle_small {
         position: relative;
@@ -296,13 +104,13 @@
         position: absolute;
         inset: 0;
         border-radius: 50%;
-        padding: 6px; /* control the border thickness */
+        padding: 4px; /* control the border thickness */
         background-image: conic-gradient(
             from var(--border-angle-small),
-            rgb(239, 239, 239) 18%,
-            rgb(249, 9, 241) 20%,
-            rgb(239, 239, 239) 45%,
-            rgb(239, 239, 239)
+            rgba(239, 239, 239, 0.2) 6%,
+            #F7AB0A 8%,
+            rgba(239, 239, 239, 0.2) 15%,
+            rgba(239, 239, 239, 0.2)
 
           );
         -webkit-mask: 
@@ -314,7 +122,7 @@
 
 
 
-        animation: bg-spin 5s linear infinite;
+        animation: bg-spin 6s linear infinite;
         @keyframes bg-spin {
           to {
             --border-angle-small: 0turn;

@@ -2,7 +2,7 @@ import { urlFor } from '@/sanity'
 import { PageInfo } from '@/typings'
 import { motion } from 'framer-motion'
 import React from 'react'
-import Circles from './CirclesPulse'
+import Circles from './Circles'
 
 type Props = {
     pageInfo: PageInfo,
