@@ -47,6 +47,11 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
       </section>
 
+      <section id="test" className="snap-start">
+        <TestSection />
+
+      </section>
+
 
       
       {/* About */}
