@@ -11,10 +11,13 @@ type Props = {
 function Info({pageInfo}: Props) {
     return (
 
-        <div className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px]
-        xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
+        <div className="relative h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
 
         <Circles />
+        {/* <div className="text-1xl absolute items-center">
+            HELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+        </div> */}
+        
 
         </div>
 
