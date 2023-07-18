@@ -36,25 +36,20 @@ export const InputSpotlightBorderCSS = () => {
 
   return (
     <div className="input-wrapper relative">
-      <input
+      <div 
         onMouseMove={handleMouseMove}
         onFocus={handleFocus}
         onBlur={handleBlur}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        autoComplete="off"
-        placeholder="Enter your email address"
-        type="email"
-        name="email"
         className="base-input"
       />
-      <input
+      <div
         ref={divRef}
-        disabled
         style={{
-          border: "1px solid rgb(228, 115, 32)",
+          border: "2px solid rgb(247 171 10 / 0.6)",
           opacity,
-          WebkitMaskImage: `radial-gradient(30% 30px at ${position.x}px ${position.y}px, black 45%, transparent)`,
+          WebkitMaskImage: `radial-gradient(30% 150px at ${position.x}px ${position.y}px, black 50%, transparent)`,
         }}
         aria-hidden="true"
         className="overlay-input"

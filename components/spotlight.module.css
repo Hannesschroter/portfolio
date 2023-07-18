@@ -3,24 +3,24 @@
   }
   
   .input-wrapper {
-    width: 20rem;
+    width: 30rem;
   }
   
   .base-input {
-    height: 3rem;
+    height: 50rem;
     width: 100%;
     cursor: default;
-    border-radius: 0.5rem;
-    border: 1px solid #2d3748;
+    border-radius: 10%;
+    border: 1px solid #fa6d0e;
     background-color: #1a202c;
     padding: 0.875rem;
     color: #cbd5e0;
-    transition: border-color 0.5s;
+    transition: border-color 1s;
     outline: none;
   }
   
   .base-input:focus {
-    border-color: #e47320;
+    border-color: #06ff02;
   }
   
   .base-input::placeholder {
@@ -34,14 +34,14 @@
     left: 0;
     top: 0;
     z-index: 10;
-    height: 3rem;
+    height: 50rem;
     width: 100%;
     cursor: default;
-    border-radius: 0.5rem;
+    border-radius: 10%;
     background-color: transparent;
     padding: 0.875rem;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 1s;
   }
 
 
