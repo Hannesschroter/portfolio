@@ -34,7 +34,45 @@
     .background-layer {
       background-color: #0707c000;
       opacity: 1;
-      background-image: radial-gradient(circle at -4% -12.9%, rgba(74, 98, 110, 0.9) 0.3%, rgba(34, 34, 35, 0.9) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5e6 8px ), repeating-linear-gradient( #b4b3b355, #b4b3b3 );
+      background-image: radial-gradient(circle farthest-corner at var(--x) var(--y), rgba(74, 98, 110, 0.9) 0.3%, rgba(34, 34, 35, 0.9) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5e6 8px ), repeating-linear-gradient( #b4b3b355, #b4b3b3 );
+      /* background: radial-gradient(circle farthest-corner at var(--x) var(--y), rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5e6 8px ), repeating-linear-gradient( #b4b3b355, #b4b3b3 ); */
+      animation: colorChange 30s infinite alternate;
+    }
+
+    @keyframes colorChange {
+      0% {
+        --x:0%;
+        --y:0%;
+      }
+      25% {
+        --x:10%;
+        --y:60%;
+      }
+      50% {
+        --x:30%;
+        --y:60%;
+      }
+      75% {
+        --x:90%;
+        --y:0%;
+      }
+
+      100% {
+        --x:100%;
+        --y:100%;
+      }
+    }
+
+    @property --y {
+      syntax: '<percentage>';
+      inherits: false;
+      initial-value: 0%;
+    }
+
+    @property --x {
+      syntax: '<percentage>';
+      inherits: false;
+      initial-value: 0%;
     }
 
 
