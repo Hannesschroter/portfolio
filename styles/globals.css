@@ -31,6 +31,11 @@
     .background {
         background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
     }
+    .background-layer {
+      background-color: #0707c000;
+      opacity: 1;
+      background-image: radial-gradient(circle at -4% -12.9%, rgba(74, 98, 110, 0.9) 0.3%, rgba(34, 34, 35, 0.9) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5e6 8px ), repeating-linear-gradient( #b4b3b355, #b4b3b3 );
+    }
 
 
     .mask {
