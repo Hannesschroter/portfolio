@@ -20,7 +20,7 @@ export default function Hero({pageInfo}: Props) {
     });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-8 items-center bg-transparent justify-center text-center overflow-hidden">
         <BackgroundCircles />
         <img className="relative rounded-full h-40 w-40 object-cover" 
         src={urlFor(pageInfo.heroImage).url()}
@@ -32,7 +32,7 @@ export default function Hero({pageInfo}: Props) {
             <Cursor cursorColor='#F7AB0A' />
         </h1>
 
-        <div className="pt-5">
+        <div className=" relative pt-5">
             <Link  href="#about">
             <button className="heroButton">About</button>
             </Link>

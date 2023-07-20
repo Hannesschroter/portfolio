@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Card01 from '@/public/card-01.png'
 import Card02 from '@/public/card-02.png'
 import Card03 from '@/public/card-03.png'
+import Circles from './CirclesSolid'
 
 type Props = {
   pageInfo: PageInfo
@@ -14,7 +15,18 @@ type Props = {
 
 export default function About({pageInfo}: Props) {
   return (
-    <div className="flex flex-col">
+    <div className="relative flex flex-col">
+    
+    {/* <Circles/> */}
+    <div className="absolute aspect-square sm:w-[800px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
+        <div className="absolute inset-0 -translate-x-[180px] translate-y-[50px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+    </div>
+
+    <div className="absolute aspect-square sm:w-[600px] md:w-[800px] lg:mt-[5%] w-[390px] lg:w-[900px] xl:w-[900px] max-w-[900px] stroke-gray-300/70">
+        <div className="absolute inset-0 translate-x-[180px] translate-y-[800px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+    </div>
+
+
     <motion.div
     initial={{opacity: 0}}
     whileInView={{opacity:1}}
@@ -23,9 +35,9 @@ export default function About({pageInfo}: Props) {
     className="flex flex-col relative min-h-screen text-center 
     md:text-left items-center overflow-hidden">
     
-    <h3 className="mt-24 uppercase tracking-[20px] text-gray-500 text-2xl">About</h3>
+    <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About</h3>
 
-    <div className="flex flex-col md:text-left xl:flex-row gap-8 lg:gap-20 xl:max-w-[100rem] lg:max-w-[80rem] md:max-w-[60rem] md:mt-8 items-center ">
+    <div className="flex flex-col md:text-left xl:flex-row gap-8 lg:gap-20 xl:max-w-[100rem] lg:max-w-[80rem] md:max-w-[60rem] md:mt-8 items-center justify-center ">
 
     
     <motion.img
@@ -43,7 +55,7 @@ export default function About({pageInfo}: Props) {
      md:rounded-lg sm:h-64 mt-24 md:w-[80%] xl:w-[500px] xl:h-[600px]"
     />
 
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center items-center">
 
     <div className="space-y-10 px-2 md:px-10">
       <h4 className="text-xl font-semibold pt-10">
@@ -56,13 +68,16 @@ export default function About({pageInfo}: Props) {
 
     
       
-    <Spotlight className="grid gap-8 sm:grid-cols-2 sm:grid-rows-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 mt-20 items-center justify-center lg:max-w-5xl group m-3">
+    <Spotlight className="grid gap-8 w-[80%] md:w-[90%] sm:grid-cols-2 sm:grid-rows-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 mt-20 items-center justify-center lg:max-w-5xl group m-3">
     {/* <Spotlight className="flex flex-wrap mt-20 items-start gap-8 lg:max-w-5xl group m-3"> */}
+    
+
+
       <SpotlightCard>
-        <div className="relative bg-slate-900 p-6 rounded-[inherit] z-20 overflow-hidden max-w-md">
+        <div className="relative bg-[#70808d6f] p-6 h-full rounded-[inherit] z-20 overflow-hidden">
           {/* Radial gradient */}
           {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
-          {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
+          <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div>
           {/* </div> */}
           <div className="flex flex-col items-center text-center">
             {/* Image */}
@@ -72,7 +87,7 @@ export default function About({pageInfo}: Props) {
             </div>
             {/* Text */}
             <div className="grow mb-5">
-            <h2 className="text-base text-slate-200 font-bold mb-1">Education</h2>
+              <h2 className="text-base text-slate-200 font-bold mb-1">Interests</h2>
               <p className="text-sm text-slate-500">M.Sc. Computer Science</p>
               <p className="text-sm text-slate-500">B.Sc. Computer Science</p>
               <p className="text-sm text-slate-500">B.Sc. Business Administration</p>
@@ -82,7 +97,7 @@ export default function About({pageInfo}: Props) {
       </SpotlightCard>
 
       <SpotlightCard>
-        <div className="relative bg-slate-900 p-6 pb-[43px] rounded-[inherit] z-20 overflow-hidden min-w-full">
+        <div className="relative bg-slate-900 p-6 h-full rounded-[inherit] z-20 overflow-hidden">
           {/* Radial gradient */}
           {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
           {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
@@ -104,7 +119,7 @@ export default function About({pageInfo}: Props) {
 
 
       <SpotlightCard>
-        <div className="relative bg-slate-900 p-6 pb-[43px] rounded-[inherit] z-20 overflow-hidden min-w-full">
+        <div className="relative bg-slate-900 p-6 h-full rounded-[inherit] z-20 overflow-hidden">
           {/* Radial gradient */}
           {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
           {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
