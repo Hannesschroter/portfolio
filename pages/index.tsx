@@ -28,7 +28,7 @@ type Props = {
 
 export default function Home({ pageInfo, experiences, projects, skills, socials }: Props) {
   return (
-    <div className="background-layer text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-hidden ">
+    <div className="background-layer text-white h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar-hidden ">
       
       <Head>
         <title>Hannes Schroter</title>
@@ -42,7 +42,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
       </section> */}
 
-      <section id="info" className="snap-start">
+      <section id="info" className="">
         <Info pageInfo={pageInfo} />
 
       </section>
@@ -55,7 +55,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
       
       {/* About */}
-      <section id="about" className="snap-center">
+      <section id="about" className="">
         <About pageInfo={pageInfo}/>
 
       </section>
@@ -64,13 +64,13 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
         <TestSection />
       </section> */}
 
-      <section id="workexperience" className="snap-center">
+      <section id="workexperience" className="">
 
         <WorkExperience projects={projects}/>
 
       </section>
 
-      <section id="skills" className="snap-start">
+      <section id="skills" className="">
 
         <Skills skills={skills} />
 
@@ -82,7 +82,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
       </section> */}
 
-      <section id="contact" className="snap-start">
+      <section id="contact" className="">
 
         <Contact pageInfo={pageInfo} />
 

@@ -24,7 +24,7 @@ function TestSection({pageInfo}: Props) {
     transition={{duration: 1.5}}
     
     className="flex flex-col relative h-screen text-center 
-    md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    md:text-left md:flex-row max-w-7xl px-8 justify-evenly mx-auto items-center">
     <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">About</h3>
 
     <motion.img
@@ -68,9 +68,9 @@ function TestSection({pageInfo}: Props) {
 
     <div className="min-h-screen h-fit flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       
-      <Spotlight className="grid gap-3 grid-cols-2 grid-rows-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 items-start lg:max-w-5xl group m-5">
+      <Spotlight className="grid gap-3 sm:grid-cols-2 sm:grid-rows-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 items-start lg:max-w-5xl group m-5">
   <SpotlightCard>
-    <div className="relative h-full bg-slate-900 p-6 pb-8 rounded-[inherit] z-20 overflow-hidden">
+    <div className="relative h-full bg-slate-900 p-2 rounded-[inherit] z-20 overflow-hidden">
       {/* Radial gradient */}
       {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
       {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
@@ -93,7 +93,7 @@ function TestSection({pageInfo}: Props) {
   </SpotlightCard>
 
   <SpotlightCard>
-    <div className="relative h-full bg-slate-900 p-6 pb-8 rounded-[inherit] z-20 overflow-hidden">
+    <div className="relative h-full bg-slate-900 p-2 rounded-[inherit] z-20 overflow-hidden">
       {/* Radial gradient */}
       {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
       {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
@@ -113,7 +113,7 @@ function TestSection({pageInfo}: Props) {
     </div>
   </SpotlightCard>
   <SpotlightCard>
-    <div className="relative h-full bg-slate-900 p-6 pb-8 rounded-[inherit] z-20 overflow-hidden">
+    <div className="relative h-full bg-slate-900 p-2 rounded-[inherit] z-20 overflow-hidden">
       {/* Radial gradient */}
       {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
       {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
