@@ -17,6 +17,7 @@ import { fetchPageInfo } from '@/utils/fetchPageInfo';
 import { fetchProjects } from '@/utils/fetchProjects';
 import { fetchSocials } from '@/utils/fetchSocials';
 import Info from '@/components/Info';
+import Presentation from '@/components/Presentation';
 
 type Props = {
   pageInfo: PageInfo; 
@@ -47,15 +48,22 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
       </section>
 
-      <section id="test" className="">
+      {/* <section id="test" className="">
         <TestSection pageInfo={pageInfo} />
+
+      </section> */}
+
+      <section id="presentation" className="">
+        <Presentation pageInfo={pageInfo} />
 
       </section>
 
 
+
+
       
-      {/* About */}
-      {/* <section id="about" className="">
+      {/* About
+      <section id="about" className="">
         <About pageInfo={pageInfo}/>
 
       </section> */}
