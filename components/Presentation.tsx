@@ -9,6 +9,9 @@ import { motion } from 'framer-motion'
 import { urlFor } from '@/sanity'
 import { PageInfo } from '@/typings'
 import ClassCard from './ClassCard'
+import {VscOrganization} from 'react-icons/vsc' 
+import {RiSailboatLine} from 'react-icons/ri'
+import {VscVmConnect} from 'react-icons/vsc'
 
 
 type Props = {
@@ -28,7 +31,7 @@ function Presentation({pageInfo}: Props) {
       <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About Me</h3>
 
       <div className="flex flex-col relative overflow-hidden rounded-3xl space-y-5 items-center
-      bg-slate-500 backdrop-filter p-8 backdrop-blur-sm bg-opacity-10 shadow-slate-700 shadow-md ">
+      bg-slate-500 backdrop-filter p-8 backdrop-blur-sm bg-opacity-10 shadow-slate-800 shadow-md ">
 
       <motion.div
       initial={{opacity: 0}}
@@ -55,17 +58,20 @@ function Presentation({pageInfo}: Props) {
       />
 
       <div className="flex flex-col gap-8 relative items-center">
-        <p className="text-base px-8">
-          {pageInfo?.backgroundInformation}
-        </p>
+        <div className="items-start">
+          <h4 className="mt-10 text-xl tracking-[3px] text-left text-[#F7AB0A] text-2xl px-8">This is my Background</h4>
+            <p className="text-base px-8 pt-6">
+              {pageInfo?.backgroundInformation}
+            </p>
+        </div>
       
 
         {/* <div className=" relative flex flex-wrap items-center justify-center gap-8"> */}
-        <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 items-center justify-center lg:max-w-5xl group">
+        <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 items-center justify-center lg:max-w-5xl min-h-full max-h-full">
           
-                <ClassCard />
-                <ClassCard />
-                <ClassCard />
+                <ClassCard icon={VscOrganization} headline={"Management"} presentation={"B.Sc. Business Administration | Value Based Management | Evaluation | Strategic Organization Design"} />
+                <ClassCard icon={VscVmConnect} headline={"Technology"} presentation={"M.Sc. Computer Science | B.Sc. Computer Science | Artificial Intelligence | Natural Language Processing | Data Science | Explainable AI"}/>
+                <ClassCard icon={RiSailboatLine} headline={"Interests"} presentation={"Sailing - Skipper at Sailwithus | (Social) Entrepreneurship - Enactus | Traveling | Food | Cooking | Drone"}/>
         </div>
 
       </div>

@@ -12,7 +12,7 @@ export default function ExperienceCard({project}: Props) {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[700px]
     snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 
-    cursor-pointer transition-opacity duration-200 overflow-hidden shadow-md">
+    cursor-pointer transition-opacity duration-200 shadow-md">
     <motion.img
     initial={{ 
         y:-100,
@@ -21,7 +21,7 @@ export default function ExperienceCard({project}: Props) {
     whileInView={{ opacity:1, y:0}}
     viewport={{once:true}}
 
-    className="w-3/4 h-40 rounded-2xl xl:w-3/4 xl:h-[200px] object-cover object-center" 
+    className="w-3/4 h-1/4 sm:h-40 rounded-2xl xl:w-3/4 xl:h-[200px] object-cover object-center" 
     src={urlFor(project?.image).url()} 
     alt=""/>
 
