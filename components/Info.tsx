@@ -22,7 +22,8 @@ function Info({pageInfo}: Props) {
         <div className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
 
         <Circles />
-        <img className="relative rounded-full mt-[15%] sm:mt-[20%] md:mt-[12%] lg:mt-[0%]  h-40 w-40 object-cover" 
+        {/* <img className="relative rounded-full mt-[15%] sm:mt-[20%] md:mt-[12%] lg:mt-[0%]  h-40 w-40 object-cover"  */}
+        <img className="relative -mt-[15%] sm:mt-[20%] md:mt-[12%] lg:mt-[0%] h-72 w-48 object-cover object-top"
         src={urlFor(pageInfo.heroImage).url()}
         alt="" /> 
         <div className="z-10">

@@ -53,14 +53,14 @@ function Presentation({pageInfo}: Props) {
       whileInView={{ opacity:1, x:0}}
       viewport={{once:true}}
       src={urlFor(pageInfo.profilePic).url()} 
-      className="md:mb-0 w-[90%] h-80 rounded-md object-cover
-      md:rounded-lg sm:h-64 mt-8 md:w-[80%] xl:w-[500px] xl:h-[600px]"
+      className="md:mb-0 max-h-96 xl:max-h-none rounded-md object-cover object-top
+      md:rounded-lg mt-8 xl:w-[500px] xl:h-[600px]"
       />
 
       <div className="flex flex-col gap-8 relative items-center">
         <div className="items-start">
           <h4 className="mt-10 text-xl tracking-[3px] text-left text-[#F7AB0A] text-2xl px-8">This is my Background</h4>
-            <p className="text-base px-8 pt-6">
+            <p className="text-base px-8 pt-6 text-left">
               {pageInfo?.backgroundInformation}
             </p>
         </div>
