@@ -12,7 +12,7 @@ export default function ExperienceCard({project}: Props) {
   return (
     <article className="flex flex-col max-h-[650px] md:max-h-none rounded-lg items-center space-y-7 flex-shrink-0 w-[100%] sm:w-[500px] md:w-[600px] xl:w-[700px]
     snap-center bg-[#292929] pt-5 pb-5 hover:opacity-100 opacity-40 
-    cursor-pointer transition-opacity duration-200 shadow-md overflow-scroll">
+    cursor-pointer shadow-md overflow-scroll">
     <motion.img
     initial={{ 
         y:-100,
