@@ -6,11 +6,9 @@ import Image from 'next/image'
 import Icon from './Icon'
 
 interface IconTypeProps {
-  width: number;
-  height: number;
+  size: number;
   color: string;
 }
-
 type IconType = (Props: IconTypeProps) => JSX.Element;
 
 type Props = {
@@ -18,7 +16,6 @@ type Props = {
   presentation: string,
   icon: IconType,
 }
-
 function ClassCard({headline, icon, presentation}: Props) {
   return (
     <div className="flex flex-col relative">

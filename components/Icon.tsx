@@ -13,7 +13,7 @@ type Props = {
     icon: IconType
 }
 
-function icon({icon}: Props) {
+function Icon({icon}: Props) {
   return (
     <div className="flex relative items-center justify-center ">
         <div className="bg-gray-800 bg-opacity-20 shadow-sm shadow-slate-900  rounded-[50%] shadow-sm aspect-square flex">
@@ -33,4 +33,4 @@ function icon({icon}: Props) {
   )
 }
 
-export default icon
+export default Icon
