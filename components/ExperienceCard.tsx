@@ -11,8 +11,8 @@ type Props = {
 export default function ExperienceCard({project}: Props) {
   return (
     <article className="flex flex-col max-h-[650px] md:max-h-none rounded-lg items-center space-y-7 flex-shrink-0 w-[100%] sm:w-[500px] md:w-[600px] xl:w-[700px]
-    snap-center bg-[#292929] pt-5 pb-5 hover:opacity-100 opacity-40 
-    cursor-pointer shadow-md overflow-scroll">
+    snap-center bg-[#292929] pt-5 pb-5 lg:hover:opacity-100 lg:opacity-40 
+    cursor-pointer md:transition-opacity md:duration-100 shadow-md overflow-scroll lg:scrollbar-hide">
     <motion.img
     initial={{ 
         y:-100,
