@@ -3,6 +3,7 @@ import React from 'react';
 import Skill from './Skill';
 import Language from './Language';
 import { Skill as SkillType } from '@/typings';
+import Management from './Management';
 
 type Props = {
   skills: SkillType[];
@@ -10,8 +11,8 @@ type Props = {
 
 function Skills({skills}: Props) {
   return (
-    <motion.div className="flex relative overflow-hidden flex-col text-lft
-    pt-10 px-1 mx-auto md:text-left max-w-[2000px]
+    <motion.div className="flex relative overflow-hidden flex-col
+    pt-10 px-1 mx-auto text-center max-w-[2000px]
     min-h-screen mx-auto items-center">
     <h3 className="mt-10 md:mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
     <h3 className="mt-10 uppercase tracking-[3px]">Click on a skill for current proficiency</h3>
@@ -37,6 +38,21 @@ function Skills({skills}: Props) {
       )   
       )}
     </div>
+
+    <h4 className="mt-10 md:mt-10 uppercase tracking-[3px]"> Management </h4> 
+    <div className="mx-2 mt-10 flex flex-wrap gap-2 justify-center md:max-w-[800px] md:gap-3 lg:gap-4">
+      <Management skill="Organizational Design" />
+      <Management skill="Innovation" />
+      <Management skill="Value Based Management" />
+      <Management skill="Controlling" />
+      <Management skill="Organization and Leadership" />
+      <Management skill="Human Resource Management" />
+      <Management skill="Entrepreneurship" />
+      <Management skill="Operations Research" />
+      <Management skill="Financial Statement Analysis and Evaluation" />
+    </div>
+
+
 
     
     
