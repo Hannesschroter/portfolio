@@ -1,18 +1,13 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  name: 'skill',
-  title: 'Skill',
+  name: 'languages',
+  title: 'Languages',
   type: 'document',
   fields: [
     {
       name: 'title',
       title: 'Title',
-      description: 'Title of skill',
-      type: 'string',
-    },
-    {
-      name: 'type',
-      title: 'Type',
-      description: 'Type of skill',
+      description: 'Language',
       type: 'string',
     },
     {
