@@ -21,11 +21,11 @@ function About({pageInfo}: Props) {
     </div>
 
     <div className="absolute aspect-square w-[200px] sm:w-[600px] md:w-[500px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
-        <div className="absolute inset-0 translate-x-[100px] sm:translate-x-[300px] sm:translate-y-[400px] md:translate-x-[600px] translate-y-[100px] md:translate-y-[550px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+        <div className="absolute inset-0 translate-x-[100px] sm:translate-x-[300px] sm:translate-y-[400px] md:translate-x-[600px] translate-y-[100px] md:translate-y-[550px] lg:-translate-x-[3000px] h-full w-full circle_large_solid z-0"></div>
     </div>
 
     <div className="absolute aspect-square sm:opacity-100 w-[300px] sm:w-[600px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
-        <div className="absolute inset-0 sm:opacity-100 -translate-x-[500px] sm:translate-x-[2000px] sm:translate-y-[400px] translate-y-[900px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+        <div className="absolute inset-0 sm:opacity-100 -translate-x-[500px] sm:translate-x-[2000px] sm:translate-y-[400px] translate-y-[900px] lg:-translate-x-[3000px] h-full w-full circle_large_solid z-0"></div>
     </div>
 
 
