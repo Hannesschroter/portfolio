@@ -3,6 +3,8 @@ import React from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 import { PiMapPinFill } from 'react-icons/pi';
+import { Features } from './features';
+import  Spotlight  from './Spotlight';
 
 
 type Inputs = {
@@ -29,37 +31,46 @@ function Contact({pageInfo}: Props) {
 
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row
-    max-w-7xl px-10 justify-evenly mx-auto items-center">
-        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-            Contact
-        </h3>
-        <div className="flex flex-col space-y-10">
-            <h4 className="text-4xl font-semibold text-center" >
-                I have got just what you need.{" "}
-                <span className="decoration-[#F7AB0A]/50 underline"> Let&apos;s talk</span>
-            </h4>
-            <div className="space-y-10">
-                <div className="flex items-center space-x-5 justify-center">
+        
+        <div className="relative min-h-screen">
+        {/* <div className="h-[40rem] w-[100%] bg-red-500">
+            {/* <Spotlight /> */}
+        {/* </div> */}
+            
+            
+        {/* <Features color="255,255,255" colorDark="100,204,255"> */}
+        <div className="relative flex flex-col z-20">
+        <div className="relative z-10 text-center">
+        <h3 className=" relative mt-20 uppercase tracking-[20px] text-gray-500 text-2xl z-10">Contact</h3>
+        <div className="flex flex-col space-y-10 justify-center items-center mt-10">
+            
+
+            
+            <h3 className="mt-10 uppercase tracking-[3px]" >
+                Get in Touch!
+            
+            </h3>
+            <div className="space-y-2 ">
+                <div className="uppercase tracking-[3px] flex space-x-5">
                     <AiOutlinePhone className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                    <p className="text-2xl">{pageInfo.phoneNumber}</p>
+                    <p>{pageInfo.phoneNumber}</p>
                 </div>
 
-                <div className="flex items-center space-x-5 justify-center">
+                <div className="uppercase tracking-[3px] flex space-x-5">
                     <AiOutlineMail className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                    <p className="text-2xl">{pageInfo.email}</p>
+                    <p>{pageInfo.email}</p>
                 </div>
 
-                <div className="flex items-center space-x-5 justify-center">
+                <div className="uppercase tracking-[3px] flex space-x-5">
                     <PiMapPinFill className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                    <p className="text-2xl">Heidelberg</p>
+                    <p>Heidelberg</p>
                 </div>
             </div>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
-                <div className="flex space-x-2">
+            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-[95%] md:w-fit">
+                <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0 w-full">
                     <input {...register('name')} placeholder="Name" className="contactInput" type="text" />
-                    <input {...register('email')}placeholder="Email" className="contactInput" type="email" />
+                    <input {...register('email')} placeholder="Email" className="contactInput" type="email" />
                 </div>
 
                 <input {...register('subject')} placeholder="Subject" className="contactInput" type="text" />
@@ -73,9 +84,20 @@ function Contact({pageInfo}: Props) {
                 </button>
 
             </form>
+            </div>
 
         </div>
+
+        </div>
+
+        {/* </Features> */}
+        
     </div>
+
+    
+       
+    
+    
   );
 }
 

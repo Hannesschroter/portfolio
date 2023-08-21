@@ -13,7 +13,7 @@ function Skills({skills}: Props) {
   return (
     <motion.div className="flex relative overflow-hidden flex-col
     pt-10 px-1 mx-auto text-center max-w-[2000px]
-    min-h-screen mx-auto items-center">
+    min-h-screen mx-auto items-center z-20">
     <h3 className="mt-10 md:mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
     <h3 className="mt-10 uppercase tracking-[3px]">Click on a skill for current proficiency</h3>
     <h4 className="mt-10 md:mt-10 uppercase tracking-[3px]"> Languages </h4>
