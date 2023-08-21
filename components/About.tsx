@@ -1,165 +1,102 @@
 import React from 'react'
-import { motion } from "framer-motion"
-import { PageInfo } from '@/typings'
+import { motion } from 'framer-motion'
 import { urlFor } from '@/sanity'
-import Spotlight, { SpotlightCard } from './Spotlight'
-import Image from 'next/image'
-import Card01 from '@/public/card-01.png'
-import Card02 from '@/public/card-02.png'
-import Card03 from '@/public/card-03.png'
-import Circles from './CirclesSolid'
+import { PageInfo } from '@/typings'
+import ClassCard from './ClassCard'
+import {VscOrganization} from 'react-icons/vsc' 
+import {RiSailboatLine} from 'react-icons/ri'
+import {VscVmConnect} from 'react-icons/vsc'
+
 
 type Props = {
-  pageInfo: PageInfo
+  pageInfo: PageInfo,
 }
 
-export default function About({pageInfo}: Props) {
+function About({pageInfo}: Props) {
   return (
-    <div className="relative flex flex-col">
-    
-    {/* <Circles/> */}
-    <div className="absolute aspect-square sm:w-[800px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
-        <div className="absolute inset-0 -translate-x-[180px] translate-y-[50px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+    <div className="flex flex-col relative min-h-screen text-center justify-evenly ">
+
+      <div className="absolute aspect-square w-[800px] sm:w-[800px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
+        <div className="absolute inset-0 -translate-x-[440px] sm:-translate-y-[500px] -translate-y-[900px] md:-translate-y-[300px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
     </div>
 
-    <div className="absolute aspect-square sm:w-[600px] md:w-[800px] lg:mt-[5%] w-[390px] lg:w-[900px] xl:w-[900px] max-w-[900px] stroke-gray-300/70">
-        <div className="absolute inset-0 translate-x-[180px] translate-y-[800px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+    <div className="absolute aspect-square w-[200px] sm:w-[600px] md:w-[500px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
+        <div className="absolute inset-0 translate-x-[100px] sm:translate-x-[300px] sm:translate-y-[400px] md:translate-x-[600px] translate-y-[100px] md:translate-y-[550px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+    </div>
+
+    <div className="absolute aspect-square sm:opacity-100 w-[300px] sm:w-[600px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
+        <div className="absolute inset-0 sm:opacity-100 -translate-x-[500px] sm:translate-x-[2000px] sm:translate-y-[400px] translate-y-[900px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
     </div>
 
 
-    <motion.div
-    initial={{opacity: 0}}
-    whileInView={{opacity:1}}
-    transition={{duration: 1.5}}
-    
-    className="flex flex-col relative min-h-screen text-center 
-    md:text-left items-center overflow-hidden">
-    
-    <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About</h3>
-
-    <div className="flex flex-col md:text-left xl:flex-row gap-8 lg:gap-20 xl:max-w-[100rem] lg:max-w-[80rem] md:max-w-[60rem] md:mt-8 items-center justify-center ">
 
     
-    <motion.img
-    initial={{
-      x: -200,
-      opacity: 0,
-    }}
-    transition={{
-      duration: 1.2,
-    }}
-    whileInView={{ opacity:1, x:0}}
-    viewport={{once:true}}
-    src={urlFor(pageInfo.profilePic).url()} 
-    className="mt-8 md:mb-0 w-[90%] h-64 rounded-md object-cover
-     md:rounded-lg sm:h-64 mt-24 md:w-[80%] xl:w-[500px] xl:h-[600px]"
-    />
+    <div className="flex flex-col relative justify-center items-center gap-10 ">
+      <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About Me</h3>
 
-    <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col relative space-y-5 items-center
+      p-8 mt-48 bg-gray-900 bg-opacity-30 shadow-slate-900 shadow-sm ">
 
-    <div className="space-y-10 px-2 md:px-10">
-      <h4 className="text-xl font-semibold pt-10">
-         Here is a <span className="underline decoration-[#F7AB0A]">little</span> background</h4>
-         
-      <p className="text-base">
-        {pageInfo?.backgroundInformation}
-      </p>
-    </div>
-
-    
+      <motion.div
+      initial={{opacity: 0}}
+      whileInView={{opacity:1}}
+      transition={{duration: 1.5}}
       
-    <Spotlight className="grid gap-8 w-[80%] md:w-[90%] sm:grid-cols-2 sm:grid-rows-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 mt-20 items-center justify-center lg:max-w-5xl group m-3">
-    {/* <Spotlight className="flex flex-wrap mt-20 items-start gap-8 lg:max-w-5xl group m-3"> */}
-    
+      className="-mt-48 flex flex-col relative xl:mt-0 xl:flex-row gap-20 xl:gap-10 text-center 
+      md:text-left items-center justify-center lg:max-w-[95%] xl:max-w-[80%] ">
 
 
-      <SpotlightCard>
-        <div className="relative bg-[#70808d6f] p-6 h-full rounded-[inherit] z-20 overflow-hidden">
-          {/* Radial gradient */}
-          {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
-          <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div>
-          {/* </div> */}
-          <div className="flex flex-col items-center text-center">
-            {/* Image */}
-            <div className="relative">
-              <div className="w-[50%] h-[50%] absolute inset-0 m-auto -translate-y-[30%] blur-[80px] -z-10 rounded-full bg-slate-50" aria-hidden="true"></div>
-              <Image className="inline-flex" src={Card02} width={150} height={150} alt="Card 02" />
-            </div>
-            {/* Text */}
-            <div className="grow mb-5">
-              <h2 className="text-base text-slate-200 font-bold mb-1">Interests</h2>
-              <p className="text-sm text-slate-500">M.Sc. Computer Science</p>
-              <p className="text-sm text-slate-500">B.Sc. Computer Science</p>
-              <p className="text-sm text-slate-500">B.Sc. Business Administration</p>
-            </div>
-          </div>
+      <motion.img
+      initial={{
+        x: -200,
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1.2,
+      }}
+      whileInView={{ opacity:1, x:0}}
+      viewport={{once:true}}
+      src={urlFor(pageInfo.profilePic).url()} 
+      className="md:mb-0 max-h-72 sm:max-h-96 xl:max-h-none rounded-md object-cover object-top
+      md:rounded-lg mt-8 xl:w-[500px] xl:h-[600px]"
+      />
+
+      <div className="flex flex-col gap-8 relative items-center">
+        <div className="items-start">
+          <h4 className="mt-10 text-xl tracking-[3px] text-left text-[#F7AB0A] text-2xl px-8">This is my Background</h4>
+            <p className="text-base px-8 pt-6 text-left">
+              {pageInfo?.backgroundInformation}
+            </p>
         </div>
-      </SpotlightCard>
+      
 
-      <SpotlightCard>
-        <div className="relative bg-slate-900 p-6 h-full rounded-[inherit] z-20 overflow-hidden">
-          {/* Radial gradient */}
-          {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
-          {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
-          {/* </div> */}
-          <div className="flex flex-col items-center text-center">
-            {/* Image */}
-            <div className="relative">
-              <div className="w-[50%] h-[50%] absolute inset-0 m-auto -translate-y-[30%] blur-[80px] -z-10 rounded-full bg-slate-50" aria-hidden="true"></div>
-              <Image className="inline-flex" src={Card02} width={150} height={150} alt="Card 02" />
-            </div>
-            {/* Text */}
-            <div className="grow mb-5">
-              <h2 className="text-base text-slate-200 font-bold mb-1">Interests</h2>
-              <p className="text-sm text-slate-500"> Artificial Intelligence | Technology | Drone | Sailing | Travelling | Social Entrepreneurship  </p>
-            </div>
-          </div>
+        {/* <div className=" relative flex flex-wrap items-center justify-center gap-8"> */}
+        <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:gap-6 lg:grid-cols-3 lg:grid-rows-1 items-center justify-center lg:max-w-5xl min-h-full max-h-full">
+          
+                <ClassCard icon={VscOrganization} headline={"Management"} presentation={"B.Sc. Business Administration | Value Based Management | Evaluation | Strategic Organization Design"} />
+                <ClassCard icon={VscVmConnect} headline={"Technology"} presentation={"M.Sc. Computer Science | B.Sc. Computer Science | Artificial Intelligence | Natural Language Processing | Data Science | Explainable AI"}/>
+                <ClassCard icon={RiSailboatLine} headline={"Interests"} presentation={"Sailing - Skipper at Sailwithus | (Social) Entrepreneurship - Enactus | Traveling | Food | Cooking | Drone"}/>
         </div>
-      </SpotlightCard>
 
-
-      <SpotlightCard>
-        <div className="relative bg-slate-900 p-6 h-full rounded-[inherit] z-20 overflow-hidden">
-          {/* Radial gradient */}
-          {/* <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true"> */}
-          {/* <div className="absolute inset-0 left-0 right-0 m-auto -translate-y-full h-48 w-52 translate-z-0 bg-slate-50 rounded-full blur-[140px]"></div> */}
-          {/* </div> */}
-          <div className="flex flex-col items-center text-center">
-            {/* Image */}
-            <div className="relative">
-              <div className="w-[50%] h-[50%] absolute inset-0 m-auto -translate-y-[30%] blur-[80px] -z-10 rounded-full bg-slate-50" aria-hidden="true"></div>
-              <Image className="inline-flex" src={Card02} width={150} height={150} alt="Card 02" />
-            </div>
-            {/* Text */}
-            <div className="grow mb-5">
-              <h2 className="text-base text-slate-200 font-bold mb-1">Experience</h2>
-              <p className="text-sm text-slate-500"> Experience in multiple projects ranging from rapid prototyping to AI research  </p>
-            </div>
-          </div>
-        </div>
-      </SpotlightCard>
+      </div>
 
       
-    </Spotlight>
 
+
+      </motion.div>
+
+
+      </div>
+
+      
     
     
-    
-    </div>
-
-
-    </div>
-    </motion.div>
-
-
-
-    
-
-
-
-
+   
     
     </div>
 
-    )
+    </div>
+  )
 }
+
+export default About

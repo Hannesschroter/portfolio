@@ -53,7 +53,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
       </section> */}
 
       <section id="presentation" className="">
-        <Presentation pageInfo={pageInfo} />
+        <About pageInfo={pageInfo} />
 
       </section>
 

@@ -23,7 +23,7 @@ function Info({pageInfo}: Props) {
 
         <Circles />
         {/* <img className="relative rounded-full mt-[15%] sm:mt-[20%] md:mt-[12%] lg:mt-[0%]  h-40 w-40 object-cover"  */}
-        <img className="relative -mt-[15%] sm:mt-[20%] md:mt-[12%] lg:mt-[0%] h-72 w-48 object-cover object-top"
+        <img className="relative mt-[10%] sm:mt-[20%] md:mt-[12%] lg:mt-[0%] h-32 w-32 sm:h-36 sm:w-36 md:h-48 md:w-48 rounded-full object-cover object-top"
         src={urlFor(pageInfo.heroImage).url()}
         alt="" /> 
         <div className="z-10">
