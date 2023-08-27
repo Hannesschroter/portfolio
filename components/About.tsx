@@ -35,7 +35,7 @@ function About({pageInfo}: Props) {
       <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About Me</h3>
 
       <div className="flex flex-col relative space-y-5 items-center
-      p-8 mt-48 bg-gray-500 dark:bg-gray-700 dark:bg-opacity-40 bg-opacity-10 shadow-slate-900 shadow-sm ">
+      p-8 mt-48 bg-gray-500 dark:bg-gray-100 dark:bg-opacity-5 bg-opacity-5 shadow-slate-900 shadow-sm ">
 
       <motion.div
       initial={{opacity: 0}}
