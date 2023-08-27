@@ -13,7 +13,7 @@ function Skills({skills}: Props) {
   return (
     <motion.div className="flex relative overflow-hidden flex-col
     pt-10 px-1 mx-auto text-center max-w-[2000px]
-    min-h-screen mx-auto items-center z-20">
+    min-h-screen mx-auto items-center">
     <h3 className="mt-10 md:mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
     <h4 className="mt-10 md:mt-10 uppercase tracking-[3px] text-gray-500 dark:text-gray-100"> Languages </h4>
     <div className="mx-2 mt-10 grid grid-cols-3 gap-4 md:gap-6 md:mt-10 justify-evenly">
