@@ -17,7 +17,7 @@ function About({pageInfo}: Props) {
     <div className="flex flex-col relative min-h-screen text-center justify-evenly ">
 
       <div className="absolute aspect-square w-[800px] sm:w-[800px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
-        <div className="absolute inset-0 -translate-x-[440px] sm:-translate-y-[500px] -translate-y-[900px] md:-translate-y-[300px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+        <div className="absolute inset-0 -translate-x-[440px] sm:-translate-y-[500px] -translate-y-[700px] md:-translate-y-[300px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
     </div>
 
     <div className="absolute aspect-square w-[200px] sm:w-[600px] md:w-[500px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
@@ -37,25 +37,14 @@ function About({pageInfo}: Props) {
       <div className="flex flex-col relative space-y-5 items-center
       p-8 mt-48 bg-gray-500 dark:bg-gray-100 dark:bg-opacity-5 bg-opacity-5 shadow-slate-900 shadow-sm ">
 
-      <motion.div
-      initial={{opacity: 0}}
-      whileInView={{opacity:1}}
-      transition={{duration: 1.5}}
+      <div
+      
       
       className="-mt-48 flex flex-col relative xl:mt-0 xl:flex-row gap-10 md:gap-20 xl:gap-10 text-center 
       md:text-left items-center justify-center lg:max-w-[95%] xl:max-w-[80%] ">
 
 
-      <motion.img
-      initial={{
-        x: -200,
-        opacity: 0,
-      }}
-      transition={{
-        duration: 1.2,
-      }}
-      whileInView={{ opacity:1, x:0}}
-      viewport={{once:true}}
+      <img
       src={urlFor(pageInfo.profilePic).url()} 
       className="md:mb-0 max-h-72 sm:max-h-96 xl:max-h-none rounded-md object-cover object-top
       md:rounded-lg mt-8 xl:w-[500px] xl:h-[600px]"
@@ -84,7 +73,7 @@ function About({pageInfo}: Props) {
       
 
 
-      </motion.div>
+      </div>
 
 
       </div>

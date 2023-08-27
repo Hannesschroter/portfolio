@@ -84,6 +84,20 @@ function Contact({pageInfo}: Props) {
                 </button>
 
             </form>
+
+            <div className="w-full flex flex-col bg-slate-500 backdrop-blur-sm backdrop-filter bg-opacity-10 pt-10">
+                <div className="text-slate-800 tracking-wider pt-10 text-2xl"> Hannes Schroter </div>
+                <div className="flex flex-row items-center gap-4 text-gray-800 justify-center pt-8 pb-20">
+                    <h2 className="">Home</h2>
+                    <h2>About</h2>
+                    <h2>Experience</h2>
+                    <h2>Skills</h2>
+                    <h2>Contact</h2>
+                </div>
+
+            </div>
+
+
             </div>
 
         </div>

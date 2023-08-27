@@ -8,13 +8,19 @@
         @apply px-3 sm:px-8 m-1 py-2 border border-gray-300 
         rounded-full uppercase text-xs tracking-widest text-gray-500 
         transition-all hover:border-[#F7AB0A]/80 hover:text-[#F7AB0A]
-
     }
 
+    .navbarButton {
+      @apply sm:px-8 m-1 py-2
+      rounded-full uppercase text-xs tracking-widest text-gray-500 
+      transition-all hover:border-[#F7AB0A]/80 hover:text-[#F7AB0A]
+
+  }
+
     .contactInput {
-        @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]
-        text-gray-300 placeholder-gray-300 transition-all focus:border-[#F7AB0A]/40
-        focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40
+        @apply outline-none bg-slate-400/20 rounded-sm border-b px-6 py-4 border-[#242424]
+        text-gray-600 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-400 transition-all focus:border-[#F7AB0A]/40
+        focus:text-gray-500 hover:border-[#F7AB0A]/40
     }
 
         /* For Webkit-based browsers (Chrome, Safari and Opera) */
@@ -39,7 +45,7 @@
       
       /* background-color: #0707c000; */
       opacity: 1;
-      background-image: radial-gradient(circle farthest-corner at var(--x) var(--y), rgba(204, 204, 205, 0.96) 0.3%, rgba(238, 238, 238, 0.95) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 15px ), repeating-linear-gradient( #58585855, #595858 );
+      background-image: radial-gradient(circle farthest-corner at var(--x) var(--y), rgba(204, 204, 205, 0.90) 0.3%, rgba(238, 238, 238, 0.95) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 15px ), repeating-linear-gradient( #58585855, #595858 );
       
 
       /* background-color: #e5e5f7;
@@ -201,10 +207,10 @@
         padding: 3px; /* control the border thickness */
         background-image: conic-gradient(
             from var(--border-angle-small),
-            rgba(163, 163, 163, 0.3) 50%,
-            rgba(163, 163, 163, 0.3) 93%,
+            rgba(163, 163, 163, 0.4) 50%,
+            rgba(163, 163, 163, 0.4) 93%,
             #F7AB0A 99%,
-            rgba(163, 163, 163, 0.3)
+            rgba(163, 163, 163, 0.4)
           );
 
         -webkit-mask: 
@@ -301,10 +307,10 @@
         padding: 4px; /* control the border thickness */
         background-image: conic-gradient(
             from var(--border-angle-small),
-            rgba(163, 163, 163, 0.3) 6%,
+            rgba(163, 163, 163, 0.4) 6%,
             #F7AB0A 8%,
-            rgba(163, 163, 163, 0.3) 15%,
-            rgba(163, 163, 163, 0.3)
+            rgba(163, 163, 163, 0.4) 15%,
+            rgba(163, 163, 163, 0.4)
 
           );
         -webkit-mask: 
