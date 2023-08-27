@@ -38,11 +38,10 @@
       /* background-image: radial-gradient(circle farthest-corner at var(--x) var(--y), rgba(74, 98, 110, 0.95) 0.3%, rgba(34, 34, 35, 0.95) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 15px ), repeating-linear-gradient( #58585855, #595858 ); */
       /* background: radial-gradient(circle farthest-corner at var(--x) var(--y), rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5e6 8px ), repeating-linear-gradient( #b4b3b355, #b4b3b3 ); */
       
-      background-color: #0707c000;
+      /* background-color: #0707c000; */
       opacity: 1;
-      /* background-image: radial-gradient(circle farthest-corner at var(--x) var(--y), rgba(235, 6, 6, 0.97) 0.3%, rgba(238, 238, 238, 0.95) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 15px ), repeating-linear-gradient( #58585855, #595858 ); */
-      background-image: radial-gradient(circle farthest-corner at var(--x) var(--y), rgba(74, 98, 110, 0.95) 0.3%, rgba(34, 34, 35, 0.95) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 15px ), repeating-linear-gradient( #58585855, #595858 );
-
+      background-image: radial-gradient(circle farthest-corner at var(--x) var(--y), rgba(204, 204, 205, 0.96) 0.3%, rgba(238, 238, 238, 0.95) 90.2%), repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 15px ), repeating-linear-gradient( #58585855, #595858 );
+      
 
       /* background-color: #e5e5f7;
       opacity: 1;
