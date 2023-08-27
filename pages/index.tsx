@@ -17,6 +17,7 @@ import { fetchProjects } from '@/utils/fetchProjects';
 import { fetchSocials } from '@/utils/fetchSocials';
 import Info from '@/components/Info';
 import Presentation from '@/components/Presentation';
+import useColorMode from '@/hooks/useColorMode';
 
 type Props = {
   pageInfo: PageInfo; 
@@ -27,12 +28,15 @@ type Props = {
 }
 
 export default function Home({ pageInfo, experiences, projects, skills, socials }: Props) {
+
+
   return (
-    <div className="background-layer text-white h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar-hidden ">
+    <div className="background-layer-light dark:background-layer-dark text-white h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar-hidden ">
       
       <Head>
         <title>Hannes Schroter</title>
       </Head>
+
 
       <Header socials={socials} />
 
@@ -93,7 +97,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
         <Contact pageInfo={pageInfo} />
 
-      </section>
+      </section>      
 
     </div>
   )

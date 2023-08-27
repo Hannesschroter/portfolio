@@ -31,18 +31,18 @@ function About({pageInfo}: Props) {
 
 
     
-    <div className="flex flex-col relative justify-center items-center gap-10 ">
+    <div className="flex flex-col relative justify-center items-center gap-1 md:gap-10 ">
       <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About Me</h3>
 
       <div className="flex flex-col relative space-y-5 items-center
-      p-8 mt-48 bg-gray-900 bg-opacity-30 shadow-slate-900 shadow-sm ">
+      p-8 mt-48 bg-gray-500 dark:bg-gray-700 dark:bg-opacity-40 bg-opacity-10 shadow-slate-900 shadow-sm ">
 
       <motion.div
       initial={{opacity: 0}}
       whileInView={{opacity:1}}
       transition={{duration: 1.5}}
       
-      className="-mt-48 flex flex-col relative xl:mt-0 xl:flex-row gap-20 xl:gap-10 text-center 
+      className="-mt-48 flex flex-col relative xl:mt-0 xl:flex-row gap-10 md:gap-20 xl:gap-10 text-center 
       md:text-left items-center justify-center lg:max-w-[95%] xl:max-w-[80%] ">
 
 
@@ -61,10 +61,11 @@ function About({pageInfo}: Props) {
       md:rounded-lg mt-8 xl:w-[500px] xl:h-[600px]"
       />
 
-      <div className="flex flex-col gap-8 relative items-center">
+      <div className="flex flex-col gap-6 sm:gap-8 relative items-center">
         <div className="items-start">
-          <h4 className="mt-10 text-xl tracking-[3px] text-left text-[#F7AB0A] text-2xl px-8">This is my Background</h4>
-            <p className="text-base px-8 pt-6 text-left">
+          <h4 className="mt-0 text-xl tracking-[3px] text-left text-[#cfa13e] dark:text-[#F7AB0A] text-2xl px-8">Welcome to my personal Website!</h4>
+          <h4 className="pt-10 text-md tracking-[3px] text-left text-slate-700 dark:text-slate-300 px-8">Data Science at the intersection of technology, management and entrepreneuriship.</h4>
+            <p className="text-base px-8 pt-6 text-left text-slate-800 dark:text-slate-100">
               {pageInfo?.backgroundInformation}
             </p>
         </div>

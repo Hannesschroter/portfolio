@@ -10,7 +10,7 @@ type Props = {
 
 function Management({skill, directionLeft}: Props) {
   return (
-    <div className="group relative flex text-base cursor-pointer border px-3 py-1 border-[#F7AB0A] hover:bg-[#F7AB0A] hover:text-slate-900 rounded-full md:text-xl md:px-4 md:py-2">
+    <div className="group relative flex text-base cursor-pointer border px-3 py-1 text-gray-800 dark:text-gray-100 border-[#F7AB0A] hover:bg-[#F7AB0A] hover:text-gray-900 rounded-full md:text-xl md:px-4 md:py-2">
       {skill}
     </div>
     

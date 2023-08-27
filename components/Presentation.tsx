@@ -22,7 +22,7 @@ function Presentation({pageInfo}: Props) {
 
     
     <div className="flex flex-col relative justify-center items-center gap-10 ">
-      <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About Me</h3>
+      <h3 className="-mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About Me</h3>
 
       <div className="flex flex-col relative overflow-hidden rounded-3xl space-y-5 items-center
       bg-slate-500 backdrop-filter p-8 backdrop-blur-sm bg-opacity-10 shadow-slate-800 shadow-md ">
@@ -53,7 +53,7 @@ function Presentation({pageInfo}: Props) {
 
       <div className="flex flex-col gap-8 relative items-center">
         <div className="items-start">
-          <h4 className="mt-10 text-xl tracking-[3px] text-left text-[#F7AB0A] text-2xl px-8">This is my Background</h4>
+          <h4 className="mt-2 text-xl tracking-[3px] text-left text-[#ffc038] dark:text-[#F7AB0A] text-2xl px-8">This is my Background</h4>
             <p className="text-base px-8 pt-6 text-left">
               {pageInfo?.backgroundInformation}
             </p>

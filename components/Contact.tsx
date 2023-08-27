@@ -42,7 +42,7 @@ function Contact({pageInfo}: Props) {
         <div className="relative flex flex-col z-20">
         <div className="relative z-10 text-center">
         <h3 className=" relative mt-20 uppercase tracking-[20px] text-gray-500 text-2xl z-10">Contact</h3>
-        <div className="flex flex-col space-y-10 justify-center items-center mt-10">
+        <div className="flex flex-col space-y-10 justify-center items-center mt-10 text-gray-500 dark:text-gray-100">
             
 
             

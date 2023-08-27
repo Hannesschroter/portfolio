@@ -3,6 +3,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+  darkMode: 'class',
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,7 +11,14 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        primary: "#f06123"
+      }
+    },
+
+
+
   },
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),
