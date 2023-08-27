@@ -24,7 +24,7 @@ export default function Navbar({ }: Props) {
   const [colorMode, setColorMode] = useColorMode();
 
   return (
-    <nav className="sticky flex flex-col bottom-5 w-full items-center justify-center z-30">
+    <nav className="fixed flex flex-col bottom-5 w-full items-center justify-center z-30">
       <motion.div
       // initial={{ 
       //   y: 300,
