@@ -24,7 +24,7 @@ export default function Navbar({ }: Props) {
   const [colorMode, setColorMode] = useColorMode();
 
   return (
-    <footer className="sticky flex flex-col bottom-5 w-full items-center justify-center z-30">
+    <nav className="sticky flex flex-col bottom-5 w-full items-center justify-center z-30">
       <motion.div
       // initial={{ 
       //   y: 300,
@@ -82,6 +82,6 @@ export default function Navbar({ }: Props) {
 
       </motion.div>
       
-    </footer>
+    </nav>
   )
 }
