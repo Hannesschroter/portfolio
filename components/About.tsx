@@ -63,9 +63,9 @@ function About({pageInfo}: Props) {
 
       <div className="flex flex-col gap-6 sm:gap-8 relative items-center">
         <div className="items-start">
-          <h4 className="mt-0 text-xl tracking-[3px] text-left text-[#cfa13e] dark:text-[#F7AB0A] text-2xl px-8">Welcome to my personal Website!</h4>
-          <h4 className="pt-10 text-md tracking-[3px] text-left text-slate-700 dark:text-slate-300 px-8">Data Science at the intersection of technology, management and entrepreneuriship.</h4>
-            <p className="text-base px-8 pt-6 text-left text-slate-800 dark:text-slate-100">
+          <h4 className="mt-0 text-xl tracking-[3px] text-left text-[#cfa13e] dark:text-[#F7AB0A] text-2xl px-2 sm:px-8">Welcome to my personal Website!</h4>
+          <h4 className="pt-10 text-md tracking-[3px] text-left text-slate-700 dark:text-slate-300 px-2 sm:px-8">Data Science at the intersection of technology, management and entrepreneuriship.</h4>
+            <p className="text-base px-2 sm:px-8 pt-6 text-left text-slate-800 dark:text-slate-100">
               {pageInfo?.backgroundInformation}
             </p>
         </div>
