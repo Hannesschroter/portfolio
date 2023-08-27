@@ -26,18 +26,18 @@ export default function Navbar({ }: Props) {
   return (
     <footer className="sticky flex flex-col bottom-5 w-full items-center justify-center z-30">
       <motion.div
-      initial={{ 
-        y: 300,
-        opacity: 0,
+      // initial={{ 
+      //   y: 300,
+      //   opacity: 0,
 
-       }}
-      animate={{
-        y: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1.5,
-      }}
+      //  }}
+      // animate={{
+      //   y: 0,
+      //   opacity: 1,
+      // }}
+      // transition={{
+      //   duration: 1.5,
+      // }}
 
       className="w-[99%] p-2 text-xl bg-gray-600 px-2 bg-opacity-20 backdrop-blur-sm backdrop-filter rounded-full flex flex-row gap-1 text-gray-800 dark:text-gray-500 items-center justify-center">
          
