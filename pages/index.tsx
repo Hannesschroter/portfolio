@@ -31,7 +31,7 @@ export default function Home({ pageInfo, experiences, projects, skills, socials 
 
 
   return (
-    <div className="background-layer-light dark:background-layer-dark text-white h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar-hidden ">
+    <div className="bg-red-500 dark:background-layer-dark text-white h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar-hidden ">
       
       <Head>
         <title>Hannes Schroter</title>
