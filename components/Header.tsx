@@ -29,7 +29,7 @@ export default function Header({ socials }: Props) {
   const [colorMode, setColorMode] = useColorMode();
 
   return (
-    <header className="top-0 p-2 flex bg-opacity-0 items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="top-0 p-2 flex items-start justify-between max-w-7xl mx-auto xl:items-center z-40">
         <motion.div 
         initial={{ 
           x: -500,

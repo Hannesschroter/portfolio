@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const variants = {
   visible: { opacity: 1, scaleX: 2.25, transition: { duration: 1.5 } },
-  hidden: { opacity: 0.2, scaleX: 0.8, transition:{ duration: 1.5} }
+  hidden: { opacity: 0.1, scaleX: 0.8, transition:{ duration: 1.5} }
 };
 function Spotlight() {
   const controls = useAnimation();
@@ -33,8 +33,8 @@ function Spotlight() {
         <div className="grid min-h-full relative grid-cols-2 grid-rows-1 group hover:opacity-80 hover:scale-x-125 ease-in-out transform transition duration-700 z-0 ">
         {/* <div className="h-[600px] top-0 bottom-0 relative min-h-full w-[100%] bg-[conic-gradient(from_90deg_at_80%_2%,#76abcf_0%,#000212_57%)]"> */}
         {/* <div className="h-[600px] -mr-[1px] top-0 bottom-0 relative min-h-full w-[100%] bg-[radial-gradient(at_130%_-30%,rgba(0,0,0,0)_40%,rgba(41,41,41,0.3)_60%,rgba(41,41,41,1)_73%),conic-gradient(from_90deg_at_80%_2%,#76abcf_0%,#000212_57%)]"> */}
-        <div className="h-[600px] top-0 bottom-0 relative min-h-full w-[100%]
-        bg-[radial-gradient(at_130%_-30%,rgba(0,0,0,0)_40%,rgba(209,213,219,0.3)_60%,rgba(209,213,219,1)_73%),conic-gradient(from_90deg_at_80%_2%,#F7AB0AAA_0%,rgba(209,213,219,1)_57%)] 
+        <div className="h-[550px] top-0 bottom-0 relative min-h-full w-[100%]
+        bg-opacity-0
         dark:bg-[radial-gradient(at_130%_-30%,rgba(0,0,0,0)_40%,rgba(41,41,41,0.3)_60%,rgba(41,41,41,1)_73%),conic-gradient(from_90deg_at_80%_2%,#76abcf_0%,#000212_57%)]
       ">
 
@@ -42,8 +42,8 @@ function Spotlight() {
         </div>
         {/* <div className="h-[600px] top-0 bottom-0 relative min-h-full bg-[conic-gradient(from_270deg_at_20%_2%,#000212_43%,#76abcf_100%)]"> */}
         {/* <div className="h-[600px] -ml-[1px] top-0 bottom-0 relative min-h-full bg-[radial-gradient(at_-30%_-30%,rgba(0,0,0,0)_40%,rgba(41,41,41,0.3)_60%,rgba(41,41,41,1)_73%),conic-gradient(from_270deg_at_20%_2%,#000212_43%,#76abcf_100%)]"> */}
-        <div className="h-[600px] top-0 bottom-0 relative min-h-full 
-        bg-[radial-gradient(at_-30%_-30%,rgba(0,0,0,0)_40%,rgba(209,213,219,0.3)_60%,rgba(209,213,219,1)_73%),conic-gradient(from_270deg_at_20%_2%,rgba(209,213,219,1)_43%,#F7AB0AAA_100%)]
+        <div className="h-[550px] top-0 bottom-0 relative min-h-full 
+        bg-opacity-0
         dark:bg-[radial-gradient(at_-30%_-30%,rgba(0,0,0,0)_40%,rgba(41,41,41,0.3)_60%,rgba(41,41,41,1)_73%),conic-gradient(from_270deg_at_20%_2%,#000212_43%,#76abcf_100%)]
         ">
 
