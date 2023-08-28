@@ -19,9 +19,9 @@ function WorkExperience({projects}: Props) {
      pt-10 px-1 justify-evenly mx-auto items-center min-h-screen">
 
 
-    {/* <div className="absolute aspect-square sm:w-[600px] md:w-[800px] lg:mt-[10%] w-[400px] lg:w-[1000px] xl:w-[1000px] max-w-[1300px] stroke-gray-300/70">
-      <div className="absolute inset-0 translate-x-[100px] lg:translate-x-[1200px] translate-y-[70px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
-    </div> */}
+    <div className="absolute aspect-square w-[600px] sm:w-[800px] xl:w-[800px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70 dark:hidden">
+        <div className="absolute inset-0 translate-x-[250px] sm:translate-x-[350px] xl:translate-x-[800px] h-full w-full circle_large_solid z-0"></div>
+    </div>
 
     <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">Experience</h3>
 

@@ -5,8 +5,8 @@ import styled from "styled-components";
 
 
 const variants = {
-  visible: { opacity: 1, scaleX: 2.25, transition: { duration: 1.5 } },
-  hidden: { opacity: 0.1, scaleX: 0.8, transition:{ duration: 1.5} }
+  visible: { opacity: 0.8, scaleX: 2.25, transition: { duration: 1.5 } },
+  hidden: { opacity: 0.4, scaleX: 0.8, transition:{ duration: 1.5 } }
 };
 function Spotlight() {
   const controls = useAnimation();
@@ -30,7 +30,7 @@ function Spotlight() {
       className=""
     >
       <div className="flex flex-col relative min-h-full">
-        <div className="grid min-h-full relative grid-cols-2 grid-rows-1 group hover:opacity-80 hover:scale-x-125 ease-in-out transform transition duration-700 z-0 ">
+        <div className="grid min-h-full relative grid-cols-2 grid-rows-1 group hover:opacity-100 hover:scale-x-125 ease-in-out transform transition duration-700 z-0 ">
         {/* <div className="h-[600px] top-0 bottom-0 relative min-h-full w-[100%] bg-[conic-gradient(from_90deg_at_80%_2%,#76abcf_0%,#000212_57%)]"> */}
         {/* <div className="h-[600px] -mr-[1px] top-0 bottom-0 relative min-h-full w-[100%] bg-[radial-gradient(at_130%_-30%,rgba(0,0,0,0)_40%,rgba(41,41,41,0.3)_60%,rgba(41,41,41,1)_73%),conic-gradient(from_90deg_at_80%_2%,#76abcf_0%,#000212_57%)]"> */}
         <div className="h-[550px] top-0 bottom-0 relative min-h-full w-[100%]

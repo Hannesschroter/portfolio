@@ -16,8 +16,8 @@ function About({pageInfo}: Props) {
   return (
     <div className="flex flex-col relative min-h-screen -mt-14 text-center justify-evenly ">
 
-      <div className="absolute aspect-square w-[800px] sm:w-[800px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
-        <div className="absolute inset-0 -translate-x-[440px] sm:-translate-y-[500px] -translate-y-[700px] md:-translate-y-[300px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>
+      <div className="absolute aspect-square w-[800px] sm:w-[800px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1000px] xl:w-[1000px] max-w-[1300px] stroke-gray-300/70">
+        <div className="absolute inset-0 -translate-x-[440px] sm:-translate-y-[500px] lg:-translate-x-[300px] -translate-y-[700px] md:-translate-y-[300px] lg:-translate-y-0 xl:translate-y-[400px] h-full w-full circle_large_solid z-0"></div>
     </div>
 
     <div className="absolute aspect-square w-[200px] sm:w-[600px] md:w-[500px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
@@ -35,7 +35,7 @@ function About({pageInfo}: Props) {
       <h3 className="mt-10 uppercase tracking-[20px] text-gray-500 text-2xl">About Me</h3>
 
       <div className="flex flex-col relative space-y-5 items-center
-      p-8 mt-48 bg-gray-500 dark:bg-gray-100 dark:bg-opacity-5 bg-opacity-5 shadow-slate-900 shadow-sm ">
+      p-8 mt-48 xl:mt-10 bg-gray-500 dark:bg-gray-100 dark:bg-opacity-5 bg-opacity-5 shadow-slate-900 shadow-sm ">
 
       <div
       

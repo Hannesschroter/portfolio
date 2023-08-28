@@ -19,7 +19,7 @@ export default function ExperienceCard({project}: Props) {
     // cursor-pointer md:transition-opacity md:duration-100 shadow-md overflow-scroll lg:scrollbar-hide">
     // <Spotlight>
     <article className="flex flex-col relative max-h-[560px] sm:max-h-650 md:max-h-[750px] lg:max-h-none rounded-lg items-center space-y-7 flex-shrink-0 w-[100%] sm:w-[500px] md:w-[600px] xl:w-[700px]
-    snap-center bg-gray-300 dark:bg-[#292929] md:duration-100 shadow-md overflow-scroll scrollbar-hide">
+    snap-center bg-gray-300 bg-opacity-60 dark:bg-[#292929] md:duration-100 shadow-md overflow-scroll scrollbar-hide">
    
     {/* <Features color="255,255,255" colorDark="100,204,255"></Features> */}
     {/* <div className=""> */}
