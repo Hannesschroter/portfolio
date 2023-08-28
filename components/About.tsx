@@ -14,7 +14,7 @@ type Props = {
 
 function About({pageInfo}: Props) {
   return (
-    <div className="flex flex-col relative min-h-screen text-center justify-evenly ">
+    <div className="flex flex-col relative min-h-screen -mt-14 text-center justify-evenly ">
 
       <div className="absolute aspect-square w-[800px] sm:w-[800px] md:w-[1000px] lg:mt-[5%] w-[590px] lg:w-[1100px] xl:w-[1100px] max-w-[1300px] stroke-gray-300/70">
         <div className="absolute inset-0 -translate-x-[440px] sm:-translate-y-[500px] -translate-y-[700px] md:-translate-y-[300px] lg:-translate-y-0 h-full w-full circle_large_solid z-0"></div>

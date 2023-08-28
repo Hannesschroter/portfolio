@@ -19,7 +19,7 @@ function Info({pageInfo}: Props) {
     });
     return (
 
-        <div className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+        <div className="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
 
         <Circles />
         {/* <img className="relative rounded-full mt-[15%] sm:mt-[20%] md:mt-[12%] lg:mt-[0%]  h-40 w-40 object-cover"  */}

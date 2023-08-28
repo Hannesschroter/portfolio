@@ -39,7 +39,7 @@ export default function Navbar({ }: Props) {
       //   duration: 1.5,
       // }}
 
-      className="w-[99%] p-2 text-xl bg-gray-600 px-2 bg-opacity-20 backdrop-blur-sm backdrop-filter rounded-full flex flex-row gap-1 text-gray-800 dark:text-gray-500 items-center justify-center">
+      className="w-[99%] p-2 text-xl bg-gray-300 dark:bg-gray-600 px-2 bg-opacity-20 dark:bg-opacity-20 backdrop-blur-sm backdrop-filter rounded-full flex flex-row gap-1 text-gray-600 dark:text-gray-100 items-center justify-center">
          
          {/* <Link  href="#info"><AiOutlineHome/></Link>
          
